@@ -39,7 +39,7 @@ const SideBar = (props) => {
       <div className="block bg-gray-900/10 w-full max-h-full min-h-screen">
           {/* header */}
           <div className="p-12 border-gray-700 flex h-[91px] items-center gap-2 md-4 cursor-pointer">
-              <img src="/public/Group 2770.png" alt="" />
+              <img src="/Group 2770.png" alt="" />
               <h2 className="text-3xl -tracking-normal 
                ">Vasitum</h2>
           </div>
