@@ -7,9 +7,9 @@
   padding: 0; /* Removes default padding */
   box-sizing: border-box; /* Ensures consistent box-sizing */
   font-family:  'Roboto','Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #ffffff; /* Neutral text color for good readability */
-  background-color: #000000; /* Light, neutral background color */
-  line-height: 1.6; /* Comfortable line spacing */
+  color: #000000; /* Neutral text color for good readability */
+  background-color: #555555; /* Light, neutral background color */
+  line-height: 1.4; /* Comfortable line spacing */
   overflow-x: hidden; /* Prevent horizontal scrollbars */
 
   font-synthesis: none;
@@ -24,7 +24,6 @@
 ::after {
   box-sizing: border-box;
    /* outline: 1px solid lime;  */
-
 }
 body {
   font-size: 16px; /* Base font size */
@@ -32,6 +31,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
   font-family:  'Roboto','Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Match body font or use a complementary font */
 }
 h1 { font-size: 2.5rem; }
@@ -39,8 +39,8 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 
 p {
-  margin: 0 0 1em;
-  line-height: 0.8; /* Comfortable spacing */
+  margin: 1px;
+  line-height: 0.2; /* Comfortable spacing */
 }
 
 @media (max-width: 768px) {
@@ -53,11 +53,10 @@ p {
 /* for center and better readability and better body */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
   min-height: 100vh; /* Ensure full-screen height */
-  padding: 20px;
 }
 
 html {
@@ -96,7 +95,7 @@ input:-webkit-autofill {
 }
 
 @layer base {
-  :.dark {
+  :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
