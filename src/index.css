@@ -11,7 +11,6 @@
   background-color: #555555; /* Light, neutral background color */
   line-height: 1.4; /* Comfortable line spacing */
   overflow-x: hidden; /* Prevent horizontal scrollbars */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,7 +45,7 @@ p {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
-    padding: 0 10px; /* Add some breathing room */
+    padding: 0 8px; /* Add some breathing room */
   }
 }
 
@@ -56,7 +55,8 @@ body {
   /* justify-content: center;
   align-items: center; */
   flex-direction: column;
-  min-height: 100vh; /* Ensure full-screen height */
+  min-height: 100%; /* Ensure full-screen height */
+  margin-bottom: 2rem;
 }
 
 html {

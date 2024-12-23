@@ -26,6 +26,7 @@ const Main = () => {
     schedules: {
       priority: [
         { text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", time: "5 minutes ago" },
+        { text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", time: "5 minutes ago" },
         { text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", time: "5 minutes ago" }
       ],
       other: [
@@ -53,9 +54,9 @@ const Main = () => {
               {[1, 2].map((_, index) => (
                 <MetricCard
                   key={index}
-                  title="Available Position"
-                  value="24"
-                  subtexts={["Urgently Hiring", "Urgently Hiring"]}
+                  title="Total Employees"
+                  value="216"
+                  subtexts={["120 men", "96 women"]}
                   chartData={dashboardData.metrics.chartData}
                 />
               ))}
@@ -113,7 +114,7 @@ const Main = () => {
                   <option value="2daysago">2 Days Ago</option>
                 </select>
               </div>
-              <div className="flex flex-col gap-2 w-full mt-4 lg:h-[200px] overflow-y-scroll">
+              <div className="flex flex-col gap-2 w-full mt-4 lg:h-[200px] h-[300px] overflow-y-scroll">
                 <div>
                   <h6 className="text-sm text-gray-900/80">Priority</h6>
                 </div>

@@ -9,7 +9,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div className="flex flex-row ">
+      <div className="flex flex-row h-full mb-[4rem]">
         <div className="hidden lg:flex lg:max-w-[242px] lg:min-w-[242px] h-full min-h-screen">
           <SideBar />
         </div>
